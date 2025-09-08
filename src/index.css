@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .highlight-row {
+    @apply bg-yellow-100 border-2 border-yellow-300;
+    animation: highlight-pulse 3s ease-in-out;
+  }
+}
+
+@keyframes highlight-pulse {
+  0% {
+    @apply bg-yellow-200 border-yellow-400;
+  }
+  50% {
+    @apply bg-yellow-100 border-yellow-300;
+  }
+  100% {
+    @apply bg-transparent border-transparent;
+  }
+}
